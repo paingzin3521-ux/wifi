@@ -20,9 +20,17 @@ python setup.py build_ext --inplace
 ```
 This will generate a `mane_wifidog.so` file specific to your device.
 
-### 3. Run the tool
+### 3. Setup 'wifi' command (Shortcut)
+To run the tool by just typing `wifi` from anywhere:
 ```bash
-python run_mane.py
+chmod +x wifi
+cp wifi /data/data/com.termux/files/usr/bin/
+```
+
+### 4. Run the tool
+Now you can just type:
+```bash
+wifi
 ```
 
 ### 4. (Optional) Security

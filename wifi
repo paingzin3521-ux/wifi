@@ -1,0 +1,3 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# Move to the tool directory and run it
+cd $HOME/wifi && python run_mane.py
