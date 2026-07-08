@@ -1,6 +1,7 @@
-from setuptools import setup
+from setuptools import setup, Extension
 from Cython.Build import cythonize
 
+# Compile from the .c file directly to keep source hidden
 setup(
-    ext_modules = cythonize("mane_wifidog.py", compiler_directives={'language_level' : "3"})
+    ext_modules = [Extension("mane_wifidog", ["mane_wifidog.c"])]
 )
